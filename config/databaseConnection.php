@@ -1,14 +1,13 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "admin";
-$dbname = "usersdatabase";
-$conn = new mysqli($servername, $username, $password, $dbname);
+$password = "";
+$database = "usersdatabase";
 
-
-// $conn = new mysqli("localhost", "root", "", "cs222db");
+$conn = new mysqli($servername, $username, $password, $database);
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+echo "Connected successfully";
 ?>

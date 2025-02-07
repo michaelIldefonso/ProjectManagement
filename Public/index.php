@@ -1,3 +1,10 @@
+<?php
+
+include __DIR__ . '/../config/databaseConnection.php';
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
