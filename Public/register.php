@@ -1,9 +1,9 @@
 <?php
-include "config/databaseConnection.php";
+include __DIR__ . '/../config/databaseConnection.php';
 session_start();
 $errorMsg = "";
 
-if(isset($_POST["signupBtn"])){ //sign up
+if(isset($_POST["signup"])){ //sign up
     $name = $_POST["name"];
     $username = $_POST["username"];
     $email = $_POST["email"];

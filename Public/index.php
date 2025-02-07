@@ -1,7 +1,7 @@
 <?php
-
 include __DIR__ . '/../config/databaseConnection.php';
 session_start();
+
 
 ?>
 
@@ -11,7 +11,7 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8bits Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"> <!-- Use absolute path for CSS -->
 </head>
 <body>
     <div class="container">
@@ -25,15 +25,17 @@ session_start();
                 <li>Members</li>
                 <li>Workspace Settings</li>
                 <li class="premium">Premium</li>
-                <li>Workspace Views</li>
-                <ul class="submenu">
-                    <li>Table</li>
-                    <li>Calendar</li>
-                </ul>
-                <li>Your Boards</li>
-                <ul class="submenu">
-                    <li>My 8bits Board</li>
-                </ul>
+                <li>Workspace Views
+                    <ul class="submenu">
+                        <li>Table</li>
+                        <li>Calendar</li>
+                    </ul>
+                </li>
+                <li>Your Boards
+                    <ul class="submenu">
+                        <li>My 8bits Board</li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
@@ -72,4 +74,3 @@ session_start();
     </div>
 </body>
 </html>
-
