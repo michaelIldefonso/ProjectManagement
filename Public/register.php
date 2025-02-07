@@ -1,5 +1,5 @@
 <?php
-include "config/databaseConnection.php"
+include "config/databaseConnection.php";
 session_start();
 $errorMsg = "";
 
