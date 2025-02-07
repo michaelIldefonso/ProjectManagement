@@ -22,7 +22,7 @@ openModalBtn.addEventListener("click", () => {
     signupForm.style.display = "none"; 
 });
 
-// Close the modal
+// Close the modal when close button is clicked
 closeModalBtn.addEventListener("click", () => {
     modal.style.display = "none"; 
 });
@@ -40,11 +40,3 @@ signupBtn.addEventListener("click", () => {
     loginForm.style.display = "none"; 
     modalTitle.innerText = "Signup";
 });
-
-// Close modal if clicked outside of modal content
-window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.style.display = "none";
-    }
-});
-
