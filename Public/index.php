@@ -1,6 +1,7 @@
 <?php
-include __DIR__ . '/../config/databaseConnection.php';
 session_start();
+
+include __DIR__ . '/../config/databaseConnection.php';
 
 
 ?>
